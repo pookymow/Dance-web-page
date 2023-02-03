@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DANCE 💃🕺</title>
+    <style>
+      body {
+        background: linear-gradient(
+          rgb(21, 13, 107) 1.1%,
+          rgb(188, 16, 80) 130.5%
+        );
+      }
+      h1,
+      h2,
+      h3,
+      p,
+      footer {
+        text-align: center;
+      }
+      h2,
+      h3,
+      p,
+      footer {
+        font-family: "Montserrat", sans-serif;
+      }
+      h1 {
+        color: rgb(253, 253, 253);
+        border: 1px solid #ffff;
+        border-radius: 5px;
+        font-family: "Rubik Mono One", sans-serif;
+        font-size: 80px;
+        padding: 20px;
+        margin: 50px 100px 20px 100px;
+      }
+      h2 {
+        color: rgb(253, 253, 253);
+        font-size: 30px;
+      }
+
+      h3 {
+        color: rgb(253, 253, 253);
+        font-size: 25px;
+      }
+      p {
+        color: rgb(253, 253, 253);
+        font-size: 17px;
+        line-height: 1.5;
+        margin: 20px 30px;
+      }
+      a {
+        color: rgb(31, 5, 68);
+      }
+
+      button {
+        background-color: rgb(90, 8, 137);
+        border: 1px solid rgb(202, 150, 236);
+        border-radius: 30px;
+        box-shadow: 0px 10px 10px 0 rgba(243, 115, 24, 0.3);
+        color: rgb(202, 150, 236);
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        margin: 0 auto;
+        padding: 20px 70px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: rgb(202, 150, 236);
+        border: 1px solid rgb(90, 8, 137);
+        color: rgb(90, 8, 137);
+        cursor: pointer;
+      }
+      footer {
+        color: rgb(202, 150, 236);
+        margin: 40px;
+      }
+
+      .link {
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 40px;
+        transition: all 200ms ease-in-out;
+        text-align: center;
+      }
+      .link :hover {
+        color: rgb(202, 150, 236);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        overflow: auto;
+      }
+      .gallery {
+        float: left;
+        margin: 5px;
+        width: 390px;
+      }
+      .gallery img {
+        border-radius: 5px;
+        height: 300px;
+        width: 100%;
+      }
+      .quot {
+        color: rgb(253, 253, 253);
+        font-family: "Montserrat", sans-serif;
+        font-size: 25px;
+        text-decoration: underline;
+        text-align: right;
+        margin-right: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DANCE</h1>
+    <h2>Find joy in movement</h2>
+    <div class="container">
+      <div class="gallery">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/995/original/dancer_1image-asset.jpg?1669130804"
+          alt="dance1"
+        />
+      </div>
+      <div class="gallery">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/996/original/dancer2image.jpg?1669130889"
+          alt="dancer2"
+        />
+      </div>
+      <div class="gallery">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/997/original/dancer3image.jpg?1669130972"
+          alt="dancer3"
+        />
+      </div>
+    </div>
+
+    <h3>
+      “ When you dance, your purpose is not to get to a certain place on the
+      floor. It's to enjoy each step along the way.”
+    </h3>
+
+    <div class="quot"><em>-Wayne Dyer</em></div>
+
+    <p>
+      Are we made to dance? The likely answer to this question is yes. Anyone
+      who thinks they can't dance ought to consider how much it is a part of our
+      cultural heritage as human beings before deciding against it! Experts
+      speculate that dancing has likely been a component of human life even
+      before the dawn of civilization, spanning as far back as 1.5 million years
+      ago. Back then it was used as a means of communication between prehistoric
+      humans in order to maintain survival. Since these ancient times, dance has
+      evolved into something far more than just a means of communication. This
+      article explores the benefits of dance as a highly refined and enjoyable
+      form of exercise, that improves upon health, well-being and the quality of
+      life for most who participate.
+    </p>
+    <div class="link">
+      <a
+        href="https://www.everydayhealth.com/fitness-pictures/health-benefits-of-dance.aspx"
+        target="_blank"
+      >
+        9 Reasons Dancing Is Good for Your Health
+      </a>
+    </div>
+    <br />
+    <button>Learn to Dance</button>
+    <footer>Made by K.Gueorguieva 🤩</footer>
+    <script>
+      function sendInfo() {
+        let name = prompt("What is your name?");
+        let city = prompt(" Which city do live in?");
+        let email = prompt(
+          "Please enter your email to receive information about dance lessons in your city."
+        );
+        alert(
+          "Hello👋 " +
+            name +
+            " we will send you information about dance lessons 💃🕺 in " +
+            city +
+            " shortly."
+        );
+      }
+      let learnToDance = document.querySelector("button");
+      learnToDance.addEventListener("click", sendInfo);
+    </script>
+  </body>
+</html>
